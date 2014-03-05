@@ -1,0 +1,51 @@
+Generic Stack Implementation in C
+
+Assignment 1, CS698Y: Topics in Object Oriented Language Implementation (Prof. Rajeev Kumar), 2014-14 II
+
+File:       README
+Authors:    Harshit Maheshwari (10327290/10290)
+
+
+DESCRIPTION
+===========
+
+Generic stacks are implemented using Object Oriented Languages. The purpose of this assigment was to appreciate the 
+difficulty that arises when we implement generic stacks in C language. The crux of this assignment involves using (void *)
+to hold pointers to any generic data type. 
+The stack implementation is based on linked list. The data structure STACK consists of a linked list of data structure 
+NODE. Each node represents an element of the stack and contains the pointer( void*) to the location of the element. The 
+stack implmentation has the following methods:
+1. stack_initialize: To initialize the stack
+2. stack_isempty: Returns true if stack is empty
+3. stack_push: Pushes the pointer to an element in the stack
+4. stack_pop: Pops the pointer to an element from the stack
+Note: In this implementation the stack_pop methods also returns the element pointer before popping it from the stack. 
+5. stack_top: Returns the element pointer to the top element of the stack
+6. stack_destroy: Destroys the element and frees the memory
+
+Merits: 
+The linked list implementation is a very generic method of stack implementation. Using this we can create stack of any 
+data structure type. Also, we can even create stack of heterogenous data structure. Also, there is no bound on the size
+of the stack. The code is implemented in form a seperate module which increases the modularity of the code and helps 
+in better maintainability of the code. 
+
+Demerits: 
+The user can access the inside of the stack without actually using the methods of the stack. Also, the heterogenous data
+structure stack mentioned above can many times lead to unwanted errors. 
+
+The array based approach for stack implementation was not used because we would have to reallocate memory whenever the 
+stack size exceeds the threshold of the array size. 
+
+Copyright:  (C) 2014 Harshit Maheshwari
+Licence:    FreeBSD
+
+FILES IN DISTRIBUTION
+=====================
+
+   BASE DISTRIBUTION:
+
+		README        			This file.
+		main.c					To test the stack implementation
+		mystack.c				This files implements all the stack function calls
+		mystack.h				This file is the header file for mystack.c
+		makefile				Makefile
