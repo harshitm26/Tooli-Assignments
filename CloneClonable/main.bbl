@@ -1,0 +1,25 @@
+\begin{thebibliography}{1}
+
+\bibitem{noAuthor1}
+Java clone, shallow copy and deep copy.
+\newblock \url{http://www.javaexperience.com/java-cloning-tutorial/}, 2009.
+
+\bibitem{Joe}
+Joe.
+\newblock Java clone, shallow copy and deep copy.
+\newblock
+  \url{http://javapapers.com/core-java/java-clone-shallow-copy-and-deep-copy/},
+  2009.
+
+\bibitem{Oracle}
+Oracle.
+\newblock Interface cloneable.
+\newblock
+  \url{http://docs.oracle.com/javase/7/docs/api/java/lang/Cloneable.html}.
+
+\bibitem{Suresh}
+Suresh Sajja.
+\newblock Cloneable interface in java.
+\newblock \url{http://coderevisited.com/cloneable-interface-in-java/}, 2012.
+
+\end{thebibliography}

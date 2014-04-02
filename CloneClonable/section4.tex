@@ -1,0 +1,23 @@
+\section{Inheritance \label{section:inheritance}}
+\subsection{Inheritance from `Object` Class\label{subsection:inheritanceObject}}
+	If we use `clone` method of Object class then then the clone method should throw \nameref{output:inheritanceOutput} exception. 
+	
+
+\subsection{Inheritance from parent class\label{subsection:inheritanceParent}}
+	If we use `clone` method of parent class and if parent class returns a new object then we get \textit{ClassCastException}	
+\insertcode{"Scripts/code5.java"}{`ClassCastException Example` \label{code:inheritance}}
+\insertcode{"Scripts/inheritanceOutput.output"}{`ClassCastException` \label{output:inheritanceOutput}}
+So, if a class inherits a base class, then the base class must make a call to super.clone() in order to invoke Object.clone() method. 
+The output of code \nameref{code:typeCastingError} is \nameref{output:typeCastingErrorOutput}
+\insertcode{"Scripts/typeCastingError.java"}{`TypeCastingError` \label{code:typeCastingError}}
+\insertcode{"Scripts/typeCastingError.output"}{`TypeCastingError output`\label{output:typeCastingErrorOutput}}
+We get error because after dynamic type inferencing the clone() method of Dog() is called and which in turn calls clone() method of Animal class which returns a new object of Animal class which cannot be typecasted to Dog.
+\subsection{Typecasting in Cloning\label{subsection:typecasting}}
+Consider the code \nameref{code:typecasting}
+\insertcode{"Scripts/typecasting.java"}{`TypeCasting in Cloning`\label{code:typecasting}}
+In this we see we can convert from cloned `Dog` to `Animal` and then back to `Animal`.
+
+\subsection{Cloneable Interface in parent class\label{subsection:cloneableParent}}
+Consider the code \nameref{code:cloneableParent}
+\insertcode{"Scripts/cloneableParent.java"}{`Parent class need not implement Cloneable interface` \label{code:cloneableParent}}
+The code runs without any errors. 

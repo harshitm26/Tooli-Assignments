@@ -1,0 +1,13 @@
+\BOOKMARK [1][-]{section.1}{Introduction }{}% 1
+\BOOKMARK [1][-]{section.2}{Modifier }{}% 2
+\BOOKMARK [1][-]{section.3}{`clone` method is necessary }{}% 3
+\BOOKMARK [1][-]{section.4}{`CloneNotSupportedException` Suresh, Oracle}{}% 4
+\BOOKMARK [1][-]{section.5}{Shallow Cloning vs Deep CloningnoAuthor1, Joe}{}% 5
+\BOOKMARK [2][-]{subsection.5.1}{Shallow Cloning }{section.5}% 6
+\BOOKMARK [2][-]{subsection.5.2}{Deep Cloning}{section.5}% 7
+\BOOKMARK [1][-]{section.6}{Inheritance }{}% 8
+\BOOKMARK [2][-]{subsection.6.1}{Inheritance from `Object` Class}{section.6}% 9
+\BOOKMARK [2][-]{subsection.6.2}{Inheritance from parent class}{section.6}% 10
+\BOOKMARK [2][-]{subsection.6.3}{Typecasting in Cloning}{section.6}% 11
+\BOOKMARK [2][-]{subsection.6.4}{Cloneable Interface in parent class}{section.6}% 12
+\BOOKMARK [1][-]{section.7}{Acknowledgements}{}% 13

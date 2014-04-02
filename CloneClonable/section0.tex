@@ -1,0 +1,10 @@
+\section{Introduction \label{introduction}}
+ When we want classes to support copying functionality we want to `clone` the objects of the class. In Java all classes are extended from `Object` class. `Object` class implements cloneable interface. The `cloneable` interface of java is an empty interface which contains no members at all. It is used by a class to indicate that the class supports cloning. By `supports` it means that the class implements clone() method. However, the clone() method of the `Object` class does shallow copying. If we want to do deep copying we need to do that in the child class on the copy inherited from `Object` class clone method. Some of the basic properties a clone method should satisfy are: 
+ \begin{itemize}
+ 	\item The cloned object does not have the same 		reference as that of original object .ie, o.clone() != o should be true
+	\item The cloned object has the same values as that of the original object for all the fields of the class.
+ie, o.clone.equals(o) should be true.
+	\item The cloned object and the original object should belong to the same class.
+ie, o.clone.getClass() == o.getClass() should be true. 
+ \end{itemize}
+ 

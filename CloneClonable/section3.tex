@@ -1,0 +1,29 @@
+\section{Shallow Cloning vs Deep Cloning\label{shallowDeep}\cite{noAuthor1, Joe}}
+The `object` class clone method by default returns shallow copy of the object. In order to create deep copy we need to override the `clone` method of the parent class.
+
+
+
+\subsection{Shallow Cloning \label{shallow}}
+As mentioned in Section \ref{introduction} `clone` method of `Object` class returns a shallow copy.
+\insertcode{"Scripts/shallow2.java"}{Shallow Cloning\label{code:shallowCode}}
+\insertcode{"Scripts/shallow2.output"}{Shallow Cloning Output\label{output:shallowCodeOutput}}
+
+
+ As we can see from code \nameref{code:shallowCode} and the output \nameref{output:shallowCodeOutput} if the members of child class consists of 
+\begin{itemize}
+	\item \textbf{Primitive/Immutable data types}\\
+	New copies are created. The value of primitive type `i` is copied in `cClone`.
+	\item \textbf{User Defined classes}\\
+	Only references are copied. Only the reference of field `StringBuffer b` is copied in clone `dClone`. 
+\end{itemize}
+The desired behaviour was to have different values in \textit{d.b} and \textit{dClone.b}. 
+\subsection{Deep Cloning}
+For deep cloning, we must satisfy following:\
+\begin{itemize}
+	\item All the members of the class  should implement Cloneable interface and should override Object's clone() method.
+	\item If a member method does not follow the above rule, we must create a new instance of the member class and copy all the attributes to the new object(ensuring deep copying).
+\end{itemize}
+
+In order to implement the desired behaviour we need to modify the clone method of the child class as shown in Code \nameref{code:deepCode}
+\insertcode{"Scripts/deep.java"}{`Deep Cloning`\label{code:deepCode}}
+\insertcode{"Scripts/deep.output"}{`Deep Cloning Output` \label{output:deepCodeOutput}}
