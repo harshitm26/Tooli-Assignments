@@ -1,0 +1,93 @@
+\documentclass[10pt]{article}
+\usepackage{tikz}
+\usepackage{verbatim}
+
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength\PreviewBorder{5pt}%
+\usetikzlibrary{positioning,decorations.pathreplacing,shapes}
+\usepackage[english]{babel}
+\usepackage{microtype}
+\usepackage[hmargin=1.5cm,vmargin=1cm]{geometry}
+\usepackage{amsmath}
+\DeclareMathOperator{\p}{p}
+\newcommand*{\cancer}{\text{cancer}}
+\newcommand*{\testp}{\text{test}+}
+
+
+
+\newcommand{
+\nnewnode}[7]{\path[fill=#5!#7] (#1 - #3/2,#2 - #4/2) rectangle (#1 + #3/2, #2 + #4/2);
+\node[text width = 4 cm] at (#1,#2) {#6}
+}
+
+
+\newcommand{\nnode}[8]{
+\nnewnode{#1}{#2 + 0.375*#4}{#3}{#4/4}{#5}{#6}{80};
+\nnewnode{#1-#3/4}{#2 - #4/8}{#3/2}{#4*0.75}{#5}{#7}{30};
+\nnewnode{#1+#3/4}{#2 - #4/8}{#3/2}{#4*0.75}{#5}{#8}{20};
+}
+
+\newcommand{\nline}[4]{\draw[->] 	(#1, #2+2)--(#3,#4-2.5);
+}
+
+\begin{document}
+\begin{tikzpicture}
+
+\nnode{0}{0}{8}{5}{green}{Visitor}{
+\begin{itemize}
+	\item Purchase Tickets
+	\item Baggage Check
+\end{itemize}
+}{
+\begin{itemize}
+	\item Admin-People
+	\item Zoo $\rightarrow$ Cages
+	\item Zoo $\rightarrow$ Parks
+	\item Zoo $\rightarrow$ Stalls
+	\item Animal
+\end{itemize}};
+
+\nnode{-20}{-6}{8}{4}{yellow}{Movie/Ad Makers}{
+\begin{itemize}
+	\item Do Shooting
+\end{itemize}
+}{};
+\nline{-20}{-6}{0}{0}
+
+\nnode{-11}{-6}{8}{4}{yellow}{General Public}{
+\begin{itemize}
+	\item Watch Animals
+	\item Do shopping
+	\item Eat food
+	\item Play in park
+\end{itemize}
+}{};
+\nline{-11}{-6}{0}{0}
+
+\nnode{-2}{-6}{8}{4}{yellow}{Animal-Right Activist}{
+\begin{itemize}
+	\item Monitor/Condemn condition of Animals
+\end{itemize}
+}{};
+\nline{-2}{-6}{0}{0}
+
+\nnode{7}{-6}{8}{4}{yellow}{Media}{
+\begin{itemize}
+	\item Take Pictures
+	\item Write Articles
+\end{itemize}
+}{};
+\nline{7}{-6}{0}{0}
+
+\nnode{17}{-6}{8}{4}{yellow}{Health Inspectors}{
+\begin{itemize}
+	\item Monitor condition of Animals
+	\item Write Report
+\end{itemize}
+}{};
+\nline{17}{-6}{0}{0}
+
+\end{tikzpicture}
+
+\end{document}
