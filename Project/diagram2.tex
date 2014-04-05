@@ -1,0 +1,49 @@
+\documentclass[10pt]{article}
+\usepackage{tikz}
+\usepackage{verbatim}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength\PreviewBorder{5pt}%
+\usetikzlibrary{positioning,decorations.pathreplacing,shapes}
+\usepackage[english]{babel}
+\usepackage{microtype}
+\usepackage[hmargin=1.5cm,vmargin=1cm]{geometry}
+\usepackage{amsmath}
+\DeclareMathOperator{\p}{p}
+\newcommand*{\cancer}{\text{cancer}}
+\newcommand*{\testp}{\text{test}+}
+\begin{document}
+
+\begin{tikzpicture}
+%\draw [blue] (0,0) rectangle (1.5,1);
+%\draw [red, ultra thick] (3,0.5) circle [radius=0.5];
+\path [fill=yellow!50] (0,0) circle [radius = 0.5];
+\path [fill=red!50] (-2,-1) circle [radius = 0.6];
+\path [fill=blue!50] (-1,-2) circle [radius = 0.5];
+\path [fill=blue!50] (-3,-2) circle [radius = 0.5];
+
+\path [fill=red!50] (2,-1) circle [radius = 0.6];
+\path [fill=green!50] (1,-2) circle [radius = 0.5];
+\path [fill=green!50] (3,-2) circle [radius = 0.5];
+
+
+%text
+\node[] at (0,0) {\scriptsize{Animal}};
+\node[] at (-2,-1) {\tiny{Unicellular}};
+\node[] at (2,-1) {\tiny{Mammal}};
+\node[] at (-1,-2) {\tiny{Amoeba}};
+\node[] at (-3,-2) {\tiny{Bacteria}};
+\node[] at (1,-2) {\tiny{Cat}};
+\node[] at (3,-2) {\tiny{Dog}};
+
+
+%arrow
+\draw[->] 	(-2,-0.4)--(-0.5,0);
+\draw[->] 	(2,-0.4)--(0.5,0);
+\draw[->] 	(-2.5,-2)--(-2,-1.6);
+\draw[->] 	(-1.5,-2)--(-2,-1.6);
+\draw[->] 	(2.5,-2)--(2,-1.6);
+\draw[->] 	(1.5,-2)--(2,-1.6);
+\end{tikzpicture}
+
+\end{document}

@@ -1,0 +1,14 @@
+\section{C++14 Proposed Plan}
+Some of the proposals for C++14 language specification with reference to `auto` are mentioned below. 
+\begin{itemize}
+\item Allowing non-defining function declarations with auto return type is not strictly necessary, but it is useful for coding styles that prefer to define member functions outside the class. Example:
+\insertcode{"Scripts/redeclaration.c"}{Forward declaration}
+\item Since C++ compilers are single parse, if the return type cannot be deduced from the first return statement then it gives error. 
+\insertcode{"Scripts/autosyntaxcfunction.c"}{Function return type deduction}
+\item Similarly, for templates, some examples: 
+\insertcode{"Scripts/autosyntaxcfunction.c"}{Template forward declaration}
+\item Type deduction for multiple returns in a function is also defined. Examples: 
+\insertcode{"Scripts/multiplereturns.c"}{Multiple returns in a function}
+\item Recursion is handled in the following manner:
+\insertcode{"Scripts/recursivec.c"}{Type deduction in recursive functions}
+\end{itemize}

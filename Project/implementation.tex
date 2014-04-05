@@ -1,0 +1,27 @@
+\section{Implementation}
+As of now, we have implemented the following: 
+\begin{itemize}
+\item We have implemented a basic functionality providing Java compiler as the starting point for our project which supports compile time type deduction for variable declarations and return type of functions. We also generate assembly code for the same. 
+
+\item We are doing type deductions only at compile time. 
+\item \textbf{auto} can be used for type deductions of primitive as well as user defined types.
+\insertcode{"Scripts/implemented.java"}{}
+
+\item We have also generated assembly code for the same. 
+\item We have also implemented type deductions for primitive function return type. 
+\insertcode{"Scripts/implemented2.java"}{}
+
+\item Automatic type coersion is also implemented for the same. 
+
+\item Type deductions for \textbf{auto} functions with only one return statement which returns object is implemented. 
+\insertcode{"Scripts/implemented3.java"}{}
+
+\end{itemize}
+The following is yet to be implemented: 
+\begin{itemize}
+\item Return type deduction for \textbf{auto} functions with multiple return statements that are returning different/same objects is yet to be implemented. 
+\insertcode{"Scripts/implemented4.java"}{}
+
+\item Return type inferencing for cyclic dependencies in functions is yet to implemented. 
+\item Run time type deduction cases are yet to be implemented. 
+\end{itemize}

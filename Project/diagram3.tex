@@ -1,0 +1,53 @@
+\documentclass[10pt]{article}
+\usepackage{tikz}
+\usepackage{verbatim}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength\PreviewBorder{5pt}%
+\usetikzlibrary{positioning,decorations.pathreplacing,shapes}
+\usepackage[english]{babel}
+\usepackage{microtype}
+\usepackage[hmargin=1.5cm,vmargin=1cm]{geometry}
+\usepackage{amsmath}
+\DeclareMathOperator{\p}{p}
+\newcommand*{\cancer}{\text{cancer}}
+\newcommand*{\testp}{\text{test}+}
+\begin{document}
+
+\begin{tikzpicture}
+\path [fill=blue!50] (-0.7,-0.4) rectangle (0.7,0.4);
+\path [fill=blue!50] (-0.7,-1.4) rectangle (0.7,-.6);
+\path [fill=blue!50] (-0.7,-2.4) rectangle (0.7,-1.6);
+\path [fill=blue!50] (-0.7,-3.4) rectangle (0.7,-2.6);
+\path [fill=blue!50] (-0.7,-4.4) rectangle (0.7,-3.6);
+\path [fill=blue!50] (-0.7,-5.4) rectangle (0.7,-4.6);
+\path [fill=blue!50] (1,-4.4) rectangle (2.4,-3.6);
+
+
+
+
+
+%text
+\node[] at (0,0) {double};
+\node[] at (0,-1) {float};
+\node[] at (0,-2) {long};
+\node[] at (0,-3) {int};
+\node[] at (0,-4) {short};
+\node[] at (0,-5) {byte};
+\node[] at (1.6,-4) {char};
+
+
+
+%arrow
+\draw[->] 	(0,-4.6)--(0,-4.4);
+\draw[->] 	(0,-3.6)--(0,-3.4);
+\draw[->] 	(0,-2.6)--(0,-2.4);
+\draw[->] 	(0,-1.6)--(0,-1.4);
+\draw[->] 	(0,-0.6)--(0,-0.4);
+\draw[->] 	(1.7,-3.6)--(0.7,-3);
+
+
+
+\end{tikzpicture}
+
+\end{document}
