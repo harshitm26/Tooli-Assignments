@@ -78,8 +78,8 @@ We can allow the code given in Listing 15 in Java as Java compilers make multipl
 \insertcode{"Scripts/code17.java"}{Deferred variable definition}
 In fact, in Java we can allow the use of `auto` keyword for function return type for cyclic dependencies as shown in Listing \ref{cyclicdependency1}. In Listing \ref{cyclicdependency1} the return type of all the functions will become `int`.
 \insertcode{"Scripts/code18.java"}{Cyclic Dependency\label{cyclicdependency1}}
-There is only one condition that it is actually possible to deduce the return type and there is not clash in return types. For instance the code given in Listing \ref{cyclicdependency2} will give compile time error as there is unresolved cyclic dependency of return types.
-\insertcode{"Scripts/code19.java"}{Type deduction not possible\label{cyclicdependency2}}
+There is only one condition that it is actually possible to deduce the return type and there is not clash in return types. For instance the code given in Listing \ref{code:cyclicdependency2} will give compile time error as there is unresolved cyclic dependency of return types.
+\insertcode{"Scripts/code19.java"}{Type deduction not possible\label{code:cyclicdependency2}}
 
 However, the code given in Listing \ref{cyclicdependency3} is allowed and we can deduce the return type. 
 \insertcode{"Scripts/code20.java"}{Cyclic dependencies\label{cyclicdependency3}}

@@ -90,6 +90,17 @@ tabsize=2, % Number of spaces per tab in the code
 \numberwithin{figure}{section} % Number figures within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
 \numberwithin{table}{section} % Number tables within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
 
+\makeatletter
+\newenvironment{chapquote}[2][2em]
+  {\setlength{\@tempdima}{#1}%
+   \def\chapquote@author{#2}%
+   \parshape 1 \@tempdima \dimexpr\textwidth-2\@tempdima\relax%
+   \itshape}
+  {\par\normalfont\hfill--\ \chapquote@author\hspace*{\@tempdima}\par\bigskip}
+\makeatother
+
+
+
 \setlength\parindent{0pt} % Removes all indentation from paragraphs - comment this line for an assignment with lots of text
 
 %----------------------------------------------------------------------------------------
@@ -120,6 +131,7 @@ tabsize=2, % Number of spaces per tab in the code
 \input{keywords}
 %\input{section3}
 \input{stateofart}
+\input{History}
 %\input{scope}
 %\input{proposedplan}
 %\input{outcome}
@@ -127,6 +139,6 @@ tabsize=2, % Number of spaces per tab in the code
 \input{c14}
 \input{rules}
 \input{implementation}
- 
+\input{Acknowledgements}
 
 \end{document}

@@ -2,16 +2,20 @@
 \contentsline {section}{\numberline {1}Abstract}{3}
 \contentsline {section}{\numberline {2}Keywords}{3}
 \contentsline {section}{\numberline {3}State of Art}{3}
-\contentsline {section}{\numberline {4}C++11 Specifications}{3}
-\contentsline {section}{\numberline {5}C++14 Proposed Plan}{5}
-\contentsline {section}{\numberline {6}Proposed Rules}{6}
-\contentsline {subsection}{\numberline {6.1}`auto` for variables}{6}
-\contentsline {subsubsection}{\numberline {6.1.1}`auto` for primitive data types}{7}
-\contentsline {subsubsection}{\numberline {6.1.2}`auto` for user defined objects}{7}
-\contentsline {subsection}{\numberline {6.2}`auto` for functions}{7}
-\contentsline {subsubsection}{\numberline {6.2.1}Multiple return types for primitives}{8}
-\contentsline {subsubsection}{\numberline {6.2.2}Multiple return types for classes}{9}
-\contentsline {subsection}{\numberline {6.3}C/C++ Compiler}{11}
-\contentsline {subsubsection}{\numberline {6.3.1}Recursion}{11}
-\contentsline {subsection}{\numberline {6.4}Java Compiler}{12}
-\contentsline {section}{\numberline {7}Implementation}{14}
+\contentsline {section}{\numberline {4}History and Usefulness of auto\cite {cppreference}}{3}
+\contentsline {subsection}{\numberline {4.1}History}{4}
+\contentsline {subsection}{\numberline {4.2}Usefulness}{4}
+\contentsline {section}{\numberline {5}C++11 Specifications}{5}
+\contentsline {section}{\numberline {6}C++14 Proposed Plan}{6}
+\contentsline {section}{\numberline {7}Proposed Rules}{8}
+\contentsline {subsection}{\numberline {7.1}`auto` for variables}{8}
+\contentsline {subsubsection}{\numberline {7.1.1}`auto` for primitive data types}{8}
+\contentsline {subsubsection}{\numberline {7.1.2}`auto` for user defined objects}{8}
+\contentsline {subsection}{\numberline {7.2}`auto` for functions}{9}
+\contentsline {subsubsection}{\numberline {7.2.1}Multiple return types for primitives}{9}
+\contentsline {subsubsection}{\numberline {7.2.2}Multiple return types for classes}{10}
+\contentsline {subsection}{\numberline {7.3}C/C++ Compiler}{12}
+\contentsline {subsubsection}{\numberline {7.3.1}Recursion}{12}
+\contentsline {subsection}{\numberline {7.4}Java Compiler}{13}
+\contentsline {section}{\numberline {8}Implementation}{16}
+\contentsline {section}{\numberline {9}Acknowledgements}{17}

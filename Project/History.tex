@@ -1,0 +1,21 @@
+\section{History and Usefulness of auto\cite{cppreference}}
+The auto specifier was only allowed for variables declared at block scope or in function parameter lists. It indicated automatic storage duration, which is the default for these kinds of declarations. The meaning of this keyword was changed in C++11.\
+\subsection{History}
+
+
+\begin{chapquote}{Bjarne Stroustrup , \textit{C++11 - the new ISO C++ standard \cite{cppreference}}}
+
+``The auto feature has the distinction to be the earliest to be suggested and implemented: I had it working in my Cfront implementation in early 1984, but was forced to take it out because of C compatibility problems. Those compatibility problems disappeared when C++98 and C99 accepted the removal of "implicit int"; that is, both languages require every variable and function to be defined with an explicit type. The old meaning of auto ("this is a local variable") is now illegal. Several committee members trawled through millions of lines of code finding only a handful of uses -- and most of those were in test suites or appeared to be bugs.\\
+Being primarily a facility to simplify notation in code, auto does not affect the standard library specification.''
+\end{chapquote}
+
+
+
+\subsection{Usefulness}
+Some powerful use of \textbf{auto} are described below:
+\begin{itemize}
+\item  \textbf{auto} can be used for iterating through object lists.
+\insertcode{"Scripts/iterator.c"}{auto as iterator}
+\item The use of auto to deduce the type of a variable from its initializer is obviously most useful when that type is either hard to know exactly or hard to write.
+\insertcode{"Scripts/library.c"}{Type is hard to type/know \label{cyclicdependency3}}
+\end{itemize}
