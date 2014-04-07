@@ -1,0 +1,3 @@
+float x = 1.0; 
+...
+auto x_copy = x // just declare a new variable without the knowledge of actual type
