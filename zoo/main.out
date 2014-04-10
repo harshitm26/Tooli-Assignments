@@ -1,7 +1,7 @@
-\BOOKMARK [1][-]{section.1}{Class-Responsibility-Collaboration Model}{}% 1
-\BOOKMARK [1][-]{section.2}{CRC Model for Zoo}{}% 2
-\BOOKMARK [2][-]{subsection.2.1}{Animals}{section.2}% 3
-\BOOKMARK [2][-]{subsection.2.2}{Visitors}{section.2}% 4
-\BOOKMARK [2][-]{subsection.2.3}{Administrative Unit}{section.2}% 5
-\BOOKMARK [2][-]{subsection.2.4}{Zoo Structure}{section.2}% 6
-\BOOKMARK [1][-]{section.3}{Code Structure }{}% 7
+\BOOKMARK [1][-]{section.1}{Class-Responsibility-Collaboration Model}{}
+\BOOKMARK [1][-]{section.2}{CRC Model for Zoo}{}
+\BOOKMARK [2][-]{subsection.2.1}{Animals}{section.2}
+\BOOKMARK [2][-]{subsection.2.2}{Visitors}{section.2}
+\BOOKMARK [2][-]{subsection.2.3}{Administrative Unit}{section.2}
+\BOOKMARK [2][-]{subsection.2.4}{Zoo Structure}{section.2}
+\BOOKMARK [1][-]{section.3}{Code Structure }{}
